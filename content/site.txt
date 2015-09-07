@@ -1,17 +1,17 @@
-Title: Kirby Starterkit
+Title: Photos by Arthur Schmitt
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Arthur Schmitt
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: Nice and free photos. 
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: Kirby, free, images, photos, download, canada, nature
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: 

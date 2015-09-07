@@ -11,6 +11,8 @@ files: true
 		tags: 
 			label: tags
 			type: tags
+			lower: true
+			index: all
 fields:
   title:
     label: Title

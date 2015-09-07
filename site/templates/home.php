@@ -12,11 +12,31 @@
 			<div class="col-sm-9">
 				<?php $subpages   = $page->images()->sortBy('sort', 'asc')->paginate(10); ?>
 				<?php $pagination = $subpages->pagination(); ?>
+				
 				<?php foreach ($subpages as $image) : ?>
-					<div class="img-container">
-						<img src="<?php echo $image->url() ?>" class="img-responsive">
+					<div class="item">
+						<div class="img-container">
+							<?php echo thumb($image, array('width' => 1200)); ?>
+							<div class="img-meta center">
+								<h2 class="cap"><?php echo $image->caption() ?></h2>
+								<?php if ($image->tags() != '') : ?>
+									<div class="tags">
+										<?php $tags = explode(',',$image->tags()) ?>
+										<h4>
+										<?php foreach ($tags as $tag) : ?>
+											#<?php echo $tag ?>
+										<?php endforeach ?>
+										</h4>
+									</div>
+								<?php endif ?>
+								<a href="<?php echo $image->url() ?>" class="btn btn-default mt" download>Download <i class="fa fa-download"></i></a>
+							</div>
+						</div>
+						
 					</div>
 				<?php endforeach ?>
+				
+
 				<!-- Pagination -->
 				<div class="" role="navigation">
 					<ul class="pager">
@@ -40,5 +60,3 @@
 			</div>
 		</div>
 	</div> <!-- // container -->
-
-<?php snippet('footer') ?>
