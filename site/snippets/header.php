@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="shortcut icon" href="http://faviconist.com/icons/9b46309d97fc31c840c4ec7932292836/favicon.ico" />
+  <link rel="shortcut icon" href="<?php echo $site->url() ?>assets/images/favicon.ico" />
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">

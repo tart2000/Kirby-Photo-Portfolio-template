@@ -60,7 +60,10 @@
 .img-meta:hover {
 	opacity: 1;
 }
-
+.tags a {
+	color: #2A1C27;
+	padding-right: 10px;
+}
 
 
 

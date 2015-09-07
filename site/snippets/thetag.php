@@ -1,0 +1,1 @@
+<a href="<?php echo $site->url() . '/tag:' . $tag ?>">#<?php echo $tag ?></a>

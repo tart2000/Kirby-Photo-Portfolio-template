@@ -1,9 +1,9 @@
-Sort: 7
+Sort: 8
 
 ----
 
-Caption: flamingos
+Caption: flamingos trail
 
 ----
 
-Tags: pink,wtf,nature,architecture,grass
+Tags: pink,wtf,nature,architecture,grass,banner

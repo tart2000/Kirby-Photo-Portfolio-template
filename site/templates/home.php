@@ -1,16 +1,23 @@
 <?php snippet('header') ?>
 
-	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<div class="container" role="main">
 		<div class="row">
 			<div class="col-sm-3">
-				<!-- Ma face ici -->
-				<img src="<?php echo $site->url() ?>/assets/images/arthur.jpg" class="avatar">
+				<a href="<?php echo $site->url() ?>">
+					<img src="<?php echo $site->url() ?>/assets/images/arthur.jpg" class="avatar">
+				</a>
 				<h1><?php echo $page->title()->html() ?></h1>
 				<?php echo $page->text()->kirbytext() ?>
+				<hr>
+				<?php snippet('tagcloud') ?>
+
 			</div>
 			<div class="col-sm-9">
-				<?php $subpages   = $page->images()->sortBy('sort', 'asc')->paginate(10); ?>
+				<?php $subpages   = $page->images()->sortBy('sort', 'asc'); ?>
+				<?php if($tag = param('tag')) {
+				  $subpages = $subpages->filterBy('tags', $tag, ',');
+				} ?>
+				<?php $subpages = $subpages->paginate(20); ?>
 				<?php $pagination = $subpages->pagination(); ?>
 				
 				<?php foreach ($subpages as $image) : ?>
@@ -24,12 +31,12 @@
 										<?php $tags = explode(',',$image->tags()) ?>
 										<h4>
 										<?php foreach ($tags as $tag) : ?>
-											#<?php echo $tag ?>
+											<?php snippet('thetag', array('tag' => $tag)) ?>
 										<?php endforeach ?>
 										</h4>
 									</div>
 								<?php endif ?>
-								<a href="<?php echo $image->url() ?>" class="btn btn-default mt" download>Download <i class="fa fa-download"></i></a>
+								<a href="<?php echo $image->url() ?>" class="btn btn-default mt" download>Download (<?php echo $image->niceSize() ?>) <i class="fa fa-download"></i></a>
 							</div>
 						</div>
 						
