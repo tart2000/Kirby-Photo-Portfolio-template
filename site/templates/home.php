@@ -17,6 +17,7 @@
 						<img src="<?php echo $image->url() ?>" class="img-responsive">
 					</div>
 				<?php endforeach ?>
+				<!-- Pagination -->
 				<div class="" role="navigation">
 					<ul class="pager">
 						<?php if($pagination->hasPrevPage()): ?>
