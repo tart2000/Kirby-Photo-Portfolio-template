@@ -1,0 +1,42 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Navbar */
+.navbar-brand>img {
+	max-height: 100%;
+}
+
+/* Nav */
+.nav .nav {
+	padding-left: 15px;
+}
+
+/* Text blocks */
+.text img {
+	max-width: 100%;
+}
+.img-container {
+	margin-top: 30px;
+}
+.avatar {
+	max-width: 100%; 
+	margin-top: 30px;
+	border-radius: 50%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
