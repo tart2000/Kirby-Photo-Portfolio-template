@@ -2,7 +2,7 @@ Caption: rubans
 
 ----
 
-Tags: colors,c2mtl,wind
+Tags: colors,wind,sky
 
 ----
 

@@ -14,9 +14,10 @@
 			</div>
 			<div class="col-sm-9">
 				<?php $subpages   = $page->images()->sortBy('sort', 'asc'); ?>
-				<?php if($tag = param('tag')) {
-				  $subpages = $subpages->filterBy('tags', $tag, ',');
-				} ?>
+				<?php if($tag = param('tag')) : ?>
+				  <?php $subpages = $subpages->filterBy('tags', $tag, ','); ?>
+				  <h3>#<?php echo $tag ?> (<?php echo $subpages->count() ?> items)</h3>
+				<?php endif ?>
 				<?php $subpages = $subpages->paginate(20); ?>
 				<?php $pagination = $subpages->pagination(); ?>
 				

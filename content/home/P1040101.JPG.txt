@@ -6,4 +6,4 @@ Caption: jellyfish
 
 ----
 
-Tags: quebec,aquarium,blue,water
+Tags: quebec,aquarium,blue,water,texture

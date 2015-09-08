@@ -4,10 +4,13 @@ Title: Photos by Arthur Schmitt
 
 Text: 
 
-These are some pictures that I have taken and that I'd like to share. 
-Feel free to download and use them as you wish. 
+These are some pictures that I have taken and that I'd like to share. Feel free to download and use them as you wish. Retrolinks are appreciated but not compulsory. 
 
 This site was made with (link: http://getkirby.com text: Kirby.) 
 You can download it (link: https://github.com/tart2000/Kirby-Photo-Portfolio-template text: here). 
 
 http://arthurschmitt.com
+
+----
+
+Perpage: 20
