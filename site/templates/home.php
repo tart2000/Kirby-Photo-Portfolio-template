@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<a href="<?php echo $site->url() ?>">
-					<img src="<?php echo $site->url() ?>/assets/images/arthur.jpg" class="avatar">
+					<img src="<?php echo $site->url() ?>/assets/images/avatar.jpg" class="avatar">
 				</a>
 				<h1><?php echo $page->title()->html() ?></h1>
 				<?php echo $page->text()->kirbytext() ?>
